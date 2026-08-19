@@ -6,6 +6,12 @@ const Goal = props => {
     console.log(props.goal)
     return (
         <div>
+            <ul>
+                {props.goal.map(goal => {
+                    return <li key={goal.id}>{goal.text}</li>
+                })}
+            </ul>
+
              {/* <ul >
         <li>html</li>
         <li>css</li>

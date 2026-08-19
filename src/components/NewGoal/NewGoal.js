@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewGoal = () => {
+const NewGoal = props => {
 
     const addGoal = event => {
         event.preventDefault();
@@ -10,7 +10,8 @@ const NewGoal = () => {
             text : "my goal"
         };
 
-        console.log(newGoal);
+        // console.log(newGoal);
+        props.onAddGoal(newGoal);
     };
     return (
         <div>

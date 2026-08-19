@@ -12,9 +12,14 @@ const App = () =>  {
       {id: "d2" , text : "hello developer"},
       {id: "d3" , text : "hello mern"},
     ];
+
+    const addNewGoal = (NewGoal) => {
+      goals.push(NewGoal);
+      console.log(goals)
+    }
     return <div>
       <h2>what we do</h2>
-      <NewGoal />
+      <NewGoal  onAddGoal={addNewGoal}/>
      <Goal goal={goals}/>
     </div>
 };

@@ -1,16 +1,17 @@
 import React from 'react';
 
-// import './Goal.css';
+import './Goal.css';
 
-const Goal = () => {
+const Goal = props => {
+    console.log(props.goal)
     return (
         <div>
-             <ul >
+             {/* <ul >
         <li>html</li>
         <li>css</li>
         <li>js</li>
         <li>react</li>
-      </ul>
+      </ul> */}
         </div>
     );
 };

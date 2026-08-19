@@ -2,6 +2,7 @@ import React from "react";
 
 import './App.css';
 import Goal from "./components/Goal";
+import NewGoal from "./components/NewGoal/NewGoal";
 
 const App = () =>  {
     // return React.createElement("h1" , {} , "hi i am developer");
@@ -13,6 +14,7 @@ const App = () =>  {
     ];
     return <div>
       <h2>what we do</h2>
+      <NewGoal />
      <Goal goal={goals}/>
     </div>
 };

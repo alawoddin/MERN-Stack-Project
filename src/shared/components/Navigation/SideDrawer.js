@@ -1,15 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 const SideDrawer = (props) => {
-    const content  = 
+    const content = (
         <div>
-            <aside className='side-drawer'>
+            <aside className="side-drawer">
                 {props.children}
-            </aside> 
+            </aside>
         </div>
+    );
 
-    // eslint-disable-next-line no-undef
-    return ReactDOM.createPortal(content , document.getElementById('drawer-hook'));
+    return ReactDOM.createPortal(
+        content,
+        document.getElementById('drawer-hook')
+    );
 };
 
 export default SideDrawer;

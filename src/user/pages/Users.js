@@ -6,7 +6,7 @@ const Users = () => {
         {
             id : "u1",
             name : "alawoddin",
-            image : "https://www.magnific.com/free-photos-vectors/developer-illustration",
+            image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ab4tAB79y8BEUHWVk7mWAbSH1EStX3WSW8mo2m3Ogw&s=10",
             place : 3
         }
     ]

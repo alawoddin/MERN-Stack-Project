@@ -1,4 +1,14 @@
+const http = require('http');
 
+const server = http.createServer((req , res) => {
+    console.log("Income data");
+    console.log(req.method , req.url);
+
+    // res.end("Sucessfully ! ")
+    res.end("<h1>hello world</h1>")
+});
+
+server.listen(5000);
 
 // const fs = require('fs');
 

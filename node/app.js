@@ -1,18 +1,20 @@
-const fs = require('fs');
 
-const userName = "ali";
 
-fs.writeFile('user-file.txt' , "name :" +  userName , (err) =>  {
+// const fs = require('fs');
 
-    if(err) {
-        console.log(err)
-        return
-    }
-    console.log("Read the file");
+// const userName = "ali";
 
-})
+// fs.writeFile('user-file.txt' , "name :" +  userName , (err) =>  {
 
-console.log(userName)
+//     if(err) {
+//         console.log(err)
+//         return
+//     }
+//     console.log("Read the file");
+
+// })
+
+// console.log(userName)
 
 // const fs = require("fs");
 

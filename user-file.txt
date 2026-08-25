@@ -1,5 +1,1 @@
-{
-  "name": "ali",
-  "age": 25,
-  "email": "ali@gmail.com"
-}
+name :ali

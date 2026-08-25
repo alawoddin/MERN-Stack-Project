@@ -1,23 +1,19 @@
 import React from 'react';
-import UserList from '../components/UserList';
 
-// import User from '../data/users.json';
+import UsersList from '../components/UsersList';
 
 const Users = () => {
-    const Users = [
-        {
-            id : "u1",
-            name : "alawoddin",
-            image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ab4tAB79y8BEUHWVk7mWAbSH1EStX3WSW8mo2m3Ogw&s=10",
-            place : 3
-        }
-    ]
-    return (
-        <div>
-            <UserList items={Users} />
-            {/* <UserList items={User} /> */}
-        </div>
-    );
+  const USERS = [
+    {
+      id: 'u1',
+      name: 'Max Schwarz',
+      image:
+        'https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      places: 3
+    }
+  ];
+
+  return <UsersList items={USERS} />;
 };
 
 export default Users;

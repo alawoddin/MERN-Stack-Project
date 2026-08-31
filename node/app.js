@@ -6,7 +6,7 @@ const placesRoutes = require('./routes/places-route');
 
 const app = express();
 
-app.use(placesRoutes);
+app.use('/api/places' , placesRoutes);
 
 
 

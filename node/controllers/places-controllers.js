@@ -1,8 +1,4 @@
-const express = require('express');
-
 const HttpError = require('../models/http-error');
-
-const router = express.Router();
 
 const DUMMY_PLACES = [
   {
@@ -18,7 +14,7 @@ const DUMMY_PLACES = [
   }
 ];
 
-router.get('/:pid', (req, res, next) => {
+const getPlaceById = (req, res, next) => {
   const placeId = req.params.pid; // { pid: 'p1' }
 
   const place = DUMMY_PLACES.find(p => {
@@ -30,9 +26,12 @@ router.get('/:pid', (req, res, next) => {
   }
 
   res.json({ place }); // => { place } => { place: place }
-});
+};
 
-router.get('/user/:uid', (req, res, next) => {
+// function getPlaceById() { ... }
+// const getPlaceById = function() { ... }
+
+const getPlaceByUserId = (req, res, next) => {
   const userId = req.params.uid;
 
   const place = DUMMY_PLACES.find(p => {
@@ -46,6 +45,7 @@ router.get('/user/:uid', (req, res, next) => {
   }
 
   res.json({ place });
-});
+};
 
-module.exports = router;
+exports.getPlaceById = getPlaceById;
+exports.getPlaceByUserId = getPlaceByUserId;

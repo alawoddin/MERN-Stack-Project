@@ -1,21 +1,22 @@
 {
-  "name": "node",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1",
-    "express-validator": "^7.3.2",
-    "uuid": "^14.0.2"
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^1.19.4"
   }
 }

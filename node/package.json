@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^5.2.1",
+    "express-validator": "^7.3.2",
     "uuid": "^14.0.2"
   },
   "devDependencies": {
